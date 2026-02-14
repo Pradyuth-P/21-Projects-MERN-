@@ -1,0 +1,387 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    font-family:"poppins",sans-serif; 
+    background-color: #fdfdfd;
+    color:#3333;
+}
+.container{
+    max-width: 1200px;
+    margin:0 auto;
+    padding: 0 20px;
+}
+/*this is used to edit the header tag in the code */
+#heading h1{
+    font-size: 3rem;
+    font-style:italic;
+    color:#ffff;
+}
+#heading ul{
+    list-style:none;
+    display:flex;
+    gap: 20px;
+    font-style:normal;
+    font-size:1.2rem;
+}
+
+header{
+    background: #39598d;
+    color:#ffff;
+    padding: 20px 0;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+/*this is used to edit the nav tag in the code */
+nav{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/*This is used to remove the bullet points from the navigation list*/
+/* Also used to edit the unordered lists*/
+nav ul{
+    list-style:none;
+    display:flex;
+    gap: 20px;
+}
+/*This is used to edit the anchor tags in the navigation bar*/
+nav a{
+    color:#ffff;
+    text-decoration: none;
+    font-weight:bold;
+
+}
+/*This is used to edit the hover effect of the anchor tags in the navigation bar*/
+nav a:hover{
+    color:yellow;
+}
+/* ================== Home Section ================== */
+#home {
+  position: relative;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+  overflow: hidden;
+}
+/* Background Video Styling */
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+/* Overlay Styling */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 2;
+}
+/* Home Content Styling */
+.home-content {
+  position: relative;
+  z-index: 3;
+  max-width: 800px;
+  text-align: center;
+}
+/*  Home Content Text Styling */
+.home-content h2 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+.home-content p {
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+}
+.home-content .btn {
+  background: #ffca28;
+  color: #0e3959;
+  padding: 12px 25px;
+  border-radius: 5px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.home-content .btn:hover {
+  background: #fff;
+  color: #0e3959;
+}
+
+/* ================== Section Alignment ================== */
+section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+section .container {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 20px;
+}
+
+/*destination*/
+#destinations {
+  padding: 80px 0;
+  background: #f8f9fa;
+  text-align: center;
+}
+
+#destinations h2 {
+  font-size: 2.2rem;
+  margin-bottom: 40px;
+  color: #222;
+}
+/* Destinations Grid Styling */
+.destinations-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  justify-content: center;
+}
+.destinations-card{
+    background-color: #fff;
+    border-radius: 10px;
+    overflow:hidden;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+/* Destination Card Image Styling */
+.destinations-card img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+}
+/* Destination Card Title Styling */
+.destinations-card h3{
+    padding:15px;
+    font-size:1.3rem;
+    color:#222;
+    background:#fdfdfd;
+}
+/* Responsive Adjustments */
+.destinations-card:hover{
+    transform:translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+/* packages */
+#packages {
+  padding: 80px 0;
+  background: #ffff;
+  text-align: center;
+}
+#packages h2 {
+  font-size: 2.2rem;
+  margin-bottom: 40px;
+  color: #222;
+}
+#packages h3 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #222;
+}
+/* Packages Grid Styling */
+.packages-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 25px;
+  max-width: 1200px;
+  justify-content: center;
+}
+.package {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow:hidden;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+/* Packages Card Image Styling */
+.package img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+}
+/* Packages Card Title Styling */
+.package h3{
+    margin:10px 0;
+    font-size:1.3rem;
+    color:#0e3959;
+}
+.package p{
+    padding:0 15px 15px 15px;
+    font-size:0.95rem;
+    color:#555;
+}
+/* Responsive Adjustments */
+.package:hover{
+    transform:translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+.package button{
+    background: #0e3959;
+    color:#fff;
+    padding: 10px 20px;
+    border: none;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+.package button:hover {
+  background: #ffca28;
+  color: #0e3959;
+  transform: scale(1.05);
+
+}
+/* ================== Testimonials Section ================== */    
+#testimonials {
+  padding: 80px 0;
+}
+#testimonials h2 {
+ text-align: center;
+ color: #0e3959;
+ font-size: 2rem;
+ margin-bottom: 40px;
+}
+.testimonials-grid{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+.testimonial{
+    background:#f8f9fa ;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    padding:15px;
+    text-align: center;
+}
+.testimonial i{
+    color:yellow;
+    margin-bottom: 10px;
+
+}
+.testimonial p{
+    font-style: italic;
+    color:#060606;
+    margin-bottom: 15px;
+}
+.testimonial h4{
+    color:#2f1e65;
+    font-weight: bold;
+    margin-top: 10px;
+}   
+/* ================== Booking Section ================== */
+#booking {
+  padding: 60px 0;
+  background: #f8f9fa;
+}
+#booking h2 {
+  text-align: center;
+  color: #0e3959;
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+#booking p{
+    text-align: center;
+    color: #101010;
+    margin-bottom: 40px;
+}
+form {
+  max-width: 600px;
+  margin: auto;
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+form input,
+form select,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+form button {
+  background: #0e3959;
+  color: #fff;
+  border: none;
+  padding: 13px 23px;
+  border-radius: 7px;
+  cursor: pointer;
+  font-weight: bolder;
+}
+form button:hover {
+  background: yellow;
+  color: #0e3959;
+}
+/* ================== Footer Section ================== */
+footer {
+  background: #0e3959;
+  color: #fff;
+  padding: 40px 0 0;
+}
+footer .footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+footer h3 {
+  margin-bottom: 15px;
+}
+footer ul {
+  list-style: none;
+}
+footer ul li {
+  margin-bottom: 8px;
+}
+footer ul a {
+  color: #fff;
+  text-decoration: none;
+}
+footer iframe {
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  height: 200px;
+}
+.footer-bottom {
+  text-align: center;
+  padding: 15px 0;
+  background: #092940;
+  margin-top: 20px;
+  font-size: 0.9rem;
+}
+
+/* ================== Responsive Design ================== */
+@media (max-width: 992px) {
+  .destination-card img,
+  .package img {
+    height: 180px;
+  }
+}
+@media (max-width: 768px) {
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .home-content h2 {
+    font-size: 2.2rem;
+  }
+}
